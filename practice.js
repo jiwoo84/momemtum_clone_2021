@@ -1,20 +1,27 @@
 const calculator = {
-  name: "sexy calculator",
-  add: function (a, b) {
+  plus: function (a, b) {
     console.log(a + b);
   },
+
   minus: function (a, b) {
-    console.log(a - b);
+    return a - b;
   },
+
+  times: function (a, b) {
+    return a * b;
+  },
+
   divide: function (a, b) {
-    console.log(a / b);
+    return a / b;
   },
-  powerof: function (a, b) {
-    console.log(a ** b);
+
+  power: function (a, b) {
+    return a ** b;
   },
 };
 
-calculator.add(4, 2);
-calculator.minus(4, 2);
-calculator.divide(4, 2);
-calculator.powerof(4, 2);
+const valuePlus = calculator.plus(2, 3);
+const valueMinus = calculator.minus(valuePlus, 4);
+const valueTimes = calculator.times(valuePlus, valueMinus);
+
+console.log(valueMinus);
