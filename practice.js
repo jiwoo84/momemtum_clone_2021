@@ -1,12 +1,14 @@
-const title = document.querySelector("div h1");
+const h1 = document.querySelector("div h1");
 
-function titleMouseEnter() {
-  title.innerText = "Mouse is comming!";
+function handleTitleClick() {
+  const currentColor = h1.style.color;
+  let newColor;
+  if (currentColor === "blue") {
+    newColor = "tomato";
+  } else {
+    newColor = "blue";
+  }
+  h1.style.color = newColor;
 }
 
-function titleMouseLeave() {
-  title.innerText = "Mouse is gone!";
-}
-
-title.addEventListener("mouseenter", titleMouseEnter);
-title.addEventListener("mouseleave", titleMouseLeave);
+h1.addEventListener("click", handleTitleClick);
