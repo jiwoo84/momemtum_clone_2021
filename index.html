@@ -3,7 +3,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>LET'S START!</title>
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="img/icon.PNG" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -19,16 +20,30 @@
       <input type="submit" value="OK!" />
     </form>
 
-    <div id="todo-border">
-      <h1 class="hidden" id="greeting"></h1>
-      <form id="todo-form">
-        <input
-          type="text"
-          placeholder="Write a To Do and Press Enter"
-          required
-        />
-      </form>
-      <ul id="todo-list"></ul>
+    <div id="big-input">
+      <div id="input-border">
+        <h1 id="greeting">✧ To do List</h1>
+        <form id="todo-form" class="forms">
+          <input
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="todo-list" class="list"></ul>
+      </div>
+
+      <div id="plan-border">
+        <h1 id="greeting">✧ Monthly Plan</h1>
+        <form id="plan-form" class="forms">
+          <input
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="plan-list" class="list"></ul>
+      </div>
     </div>
 
     <div id="quote">
@@ -41,11 +56,40 @@
       <span></span>
     </div>
 
+    <div class="bookmark">
+      <a href="https://nomadcoders.co//">
+        <img class="bookmark-img" src="https://nomadcoders.co/m.svg" />
+      </a>
+
+      <a href="https://twitter.com/">
+        <img class="bookmark-img" src="img/twitte.png" />
+      </a>
+
+      <a href="http://youtube.com">
+        <img class="bookmark-img" src="img/youtube.png" />
+      </a>
+
+      <a href="https://github.com/">
+        <img
+          class="bookmark-img"
+          src="https://img.icons8.com/small/452/github.png"
+        />
+      </a>
+
+      <a href="https://slid.cc/docs">
+        <img
+          class="bookmark-img"
+          src="https://image.rocketpunch.com/company/146300/jusighoesa-bibeuriji_logo_1619676678.png?s=400x400&t=inside"
+        />
+      </a>
+    </div>
+
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/monthly.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/api.js"></script>
   </body>
