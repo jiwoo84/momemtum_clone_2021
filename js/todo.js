@@ -19,17 +19,27 @@ function deleteTodo(event) {
   saveToDos();
 }
 
+// done 버튼
+function doneTodo(event) {
+  const li = event.target.parentElement;
+  li.classList.add("done-line");
+}
+
 // todo 리스트 만드는 fnc
 function paintToDo(newTodo) {
   const li = document.createElement("li");
   li.id = newTodo.id;
   const span = document.createElement("span");
   span.innerText = newTodo.text;
-  const button = document.createElement("button");
-  button.innerText = "X";
-  button.addEventListener("click", deleteTodo);
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "X";
+  deleteButton.addEventListener("click", deleteTodo);
+  const doneButton = document.createElement("button");
+  doneButton.innerText = "✓";
+  doneButton.addEventListener("click", doneTodo);
   li.appendChild(span);
-  li.appendChild(button);
+  li.appendChild(deleteButton);
+  li.appendChild(doneButton);
   toDoList.appendChild(li);
 }
 

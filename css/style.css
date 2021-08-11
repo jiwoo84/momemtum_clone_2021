@@ -199,3 +199,7 @@ li button {
     transform: scale(1.2);
   }
 }
+
+.done-line {
+  text-decoration: line-through;
+}
